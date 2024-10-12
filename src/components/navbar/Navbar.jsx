@@ -10,7 +10,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   return (
     <section
-      className={`flex flex-col  bg-secondary px-4 py-3 pb-10 mt-3 border-2 border-b-4 rounded-3xl relative transition-all duration-700 ease-in-out overflow-hidden ${
+      className={` w-full top-0 left-0 flex flex-col z-50 bg-secondary px-4 py-3 pb-10 mt-3 border-2 border-b-4 rounded-3xl fixed transition-all duration-700 ease-in-out overflow-hidden ${
         menu ? "max-h-screen" : "max-h-[70px] lg:max-h-[80px]"
       }`}
     >
@@ -23,7 +23,7 @@ const Navbar = () => {
               className="w-[24px] lg:w-[28px] hover:-rotate-45 duration-200"
             />
           </div>
-          <h3 className="font-boldg text-xl lg:text-2xl xl:text-3xl font-dela ">
+          <h3 className="font-boldg text-xl lg:text-2xl font-dela ">
             DAB DADDY
           </h3>
         </div>
