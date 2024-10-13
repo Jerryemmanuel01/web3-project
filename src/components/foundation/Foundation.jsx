@@ -2,6 +2,8 @@ import React from "react";
 import dab1 from "../../assets/dab-token.png";
 import dab2 from "../../assets/dab-blue.png";
 import dab3 from "../../assets/dab-green.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const Foundation = () => {
   return (
@@ -15,16 +17,28 @@ const Foundation = () => {
       </svg>
 
       <section className=" px-5 md:px-8 lg:px-14 xl:px-24 ">
-        <div className="w-full flex flex-col items-center text-seceondary ">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full flex flex-col items-center text-seceondary "
+        >
           <h4 className="font-semibold text-lg">We got really a</h4>
           <h2 className="font-dela text-xl md:text-2xl lg:text-3xl text-[#000000]">
             STRONG FOUNDATION
           </h2>
-        </div>
+        </motion.div>
 
         <div className="w-full flex  justify-center py-10">
           <div className=" lg:max-w-none w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 ">
-            <div className="flex flex-col gap-3">
+            <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="flex flex-col gap-3"
+            >
               <div className="h-72 flex items-center justify-center bg-white rounded-t-full">
                 <img src={dab1} alt="" className="w-[200px]" />
               </div>
@@ -39,8 +53,14 @@ const Foundation = () => {
                   influencers and platforms in the meme community
                 </p>
               </div>
-            </div>
-            <div className="flex flex-col gap-3">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="flex flex-col gap-3"
+            >
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
                 <img src={dab3} alt="" className="w-[200px]" />
               </div>
@@ -55,8 +75,14 @@ const Foundation = () => {
                   community spirit among its members.
                 </p>
               </div>
-            </div>
-            <div className="flex flex-col gap-3">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="flex flex-col gap-3"
+            >
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
                 <img src={dab2} alt="" className="w-[340px]" />
               </div>
@@ -71,8 +97,14 @@ const Foundation = () => {
                   networking, and mutual support.
                 </p>
               </div>
-            </div>
-            <div className="md:flex hidden flex-col gap-3">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("down", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="md:flex hidden flex-col gap-3"
+            >
               <div className="h-72 flex items-center justify-center bg-white rounded-t-full">
                 <img src={dab1} alt="" className="w-[200px]" />
               </div>
@@ -86,7 +118,7 @@ const Foundation = () => {
                   profits will go towards supporting animal charities.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

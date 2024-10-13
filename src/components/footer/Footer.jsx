@@ -2,6 +2,8 @@ import { Link } from "react-scroll";
 import { PiTelegramLogoLight } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsGlobe } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const Footer = () => {
   const links = [
@@ -23,11 +25,23 @@ const Footer = () => {
         </svg>
       </div>
       <section className="">
-        <h2 className="font-dela text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="font-dela text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center"
+        >
           DAB DADDY
-        </h2>
-        <div className="flex justify-center w-full items-center mt-12">
-          <ul className="grid grid-cols-2 md:grid-cols-5 gap-10 font-semibold text-xl">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="flex justify-center w-full items-center mt-12"
+        >
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-10 font-semibold text-xl">
             {links.map((link, i) => (
               <li key={i}>
                 <Link
@@ -43,15 +57,21 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="mt-20 w-full flex justify-center ">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="mt-20 w-full flex justify-center "
+        >
           <button className="bg-custom-gradient px-10 md:px-16 py-4 md:py-5 text-xl rounded-3xl font-medium animate-bounce">
             Buy now
           </button>
-        </div>
+        </motion.div>
 
-        <div className="flex justify-center gap-12 mt-10">
+        <div className="flex justify-center gap-12 md:gap-20 mt-10">
           <PiTelegramLogoLight className="stroke-2 text-2xl" />
           <FaXTwitter className="text-2xl" />
           <BsGlobe className="text-2xl" />

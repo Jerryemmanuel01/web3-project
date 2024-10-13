@@ -1,6 +1,8 @@
 import React from "react";
 import ticker from "../../assets/ticker.jfif";
 import rocket from "../../assets/rocket-coin.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const About = () => {
   return (
@@ -13,11 +15,23 @@ const About = () => {
         ></path>
       </svg>
       <section className="w-full bg-secondary -mt-2 pb-12 px-10 md:px-8 lg:px-14 xl:px-24 ">
-        <h3 className="font-dela text-xl md:text-2xl lg:text-3xl text-center pt-3">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className="font-dela text-xl md:text-2xl lg:text-3xl text-center pt-3"
+        >
           WHAT IS THIS ABOUT?
-        </h3>
+        </motion.div>
 
-        <div className="md:flex w-full gap-4 bg-primary/5 items-center border-2 border-r-4 border-b-4 rounded-3xl pt-2 pb-8 mt-4 px-4 md:mt-10 text-sm md:text-base hover:scale-[1.02] duration-300">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+          className="md:flex w-full gap-4 bg-primary/5 items-center border-2 border-r-4 border-b-4 rounded-3xl pt-2 pb-8 mt-4 px-4 md:mt-10 text-sm md:text-base "
+        >
           <div className="text-justify w-full font-medium md:text-base text-sm ">
             <p className="mt-3">
               Dab Daddy is a meme token inspired by a popular cartoon piglet
@@ -43,7 +57,7 @@ const About = () => {
           <div className=" md:flex w-full mt-10">
             <img src={ticker} alt="" className="w-full rounded-2xl" />
           </div>
-        </div>
+        </motion.div>
         <div className=" top-0 left-0 absolute w-full animate_ping z-0">
           <img src={rocket} alt="" className="" />
         </div>
