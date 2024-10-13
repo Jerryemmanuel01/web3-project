@@ -40,7 +40,7 @@ const Foundation = () => {
               className="flex flex-col gap-3"
             >
               <div className="h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab1} alt="" className="w-[200px]" />
+                <img loading="lazy" src={dab1} alt="" className="w-[200px]" />
               </div>
 
               <div className="">
@@ -62,7 +62,7 @@ const Foundation = () => {
               className="flex flex-col gap-3"
             >
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab3} alt="" className="w-[200px]" />
+                <img loading="lazy" src={dab3} alt="" className="w-[200px]" />
               </div>
 
               <div className="">
@@ -84,7 +84,7 @@ const Foundation = () => {
               className="flex flex-col gap-3"
             >
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab2} alt="" className="w-[340px]" />
+                <img loading="lazy" src={dab2} alt="" className="w-[340px]" />
               </div>
 
               <div className="">
@@ -106,7 +106,7 @@ const Foundation = () => {
               className="md:flex hidden flex-col gap-3"
             >
               <div className="h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab1} alt="" className="w-[200px]" />
+                <img loading="lazy" src={dab1} alt="" className="w-[200px]" />
               </div>
 
               <div className="">

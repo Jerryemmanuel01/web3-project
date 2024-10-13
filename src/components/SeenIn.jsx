@@ -37,19 +37,19 @@ const SeenIn = () => {
       <div className="slider-container mt-3">
         <Slider {...settings} className="h-20 overflow-hidden">
           <div className="slide-ele border-2 border-b-4 border-r-4 w-60 h-20 rounded-2xl ">
-            <img src={tradingview} alt="" className="w-[85%]" />
+            <img loading="lazy" src={tradingview} alt="" className="w-[85%]" />
           </div>
           <div className="slide-ele border-2 border-b-4 border-r-4 w-60 h-20 rounded-2xl ">
-            <img src={benzinga} alt="" className="w-[85%]" />
+            <img loading="lazy" src={benzinga} alt="" className="w-[85%]" />
           </div>
           <div className="slide-ele border-2 border-b-4 border-r-4 w-60 h-20 rounded-2xl ">
-            <img src={coinmarketcap} alt="" className="w-[85%]" />
+            <img loading="lazy" src={coinmarketcap} alt="" className="w-[85%]" />
           </div>
           <div className="slide-ele border-2 border-b-4 border-r-4 w-60 h-20 rounded-2xl ">
-            <img src={businessinsider} alt="" className="w-[85%]" />
+            <img loading="lazy" src={businessinsider} alt="" className="w-[85%]" />
           </div>
           <div className="slide-ele border-2 border-b-4 border-r-4 w-60 h-20 rounded-2xl ">
-            <img src={markerwatch} alt="" className="w-[85%]" />
+            <img loading="lazy" src={markerwatch} alt="" className="w-[85%]" />
           </div>
         </Slider>
       </div>

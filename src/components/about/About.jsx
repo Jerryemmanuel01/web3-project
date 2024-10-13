@@ -55,11 +55,11 @@ const About = () => {
             </p>
           </div>
           <div className=" md:flex w-full mt-10">
-            <img src={ticker} alt="" className="w-full rounded-2xl" />
+            <img loading="lazy" src={ticker} alt="" className="w-full rounded-2xl" />
           </div>
         </motion.div>
         <div className=" top-0 left-0 absolute w-full animate_ping z-0">
-          <img src={rocket} alt="" className="" />
+          <img loading="lazy" src={rocket} alt="" className="" />
         </div>
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
