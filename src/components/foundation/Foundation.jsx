@@ -1,6 +1,7 @@
 import React from "react";
 import dab1 from "../../assets/dab-token.png";
 import dab2 from "../../assets/dab-blue.png";
+import dab3 from "../../assets/dab-green.png";
 
 const Foundation = () => {
   return (
@@ -41,7 +42,7 @@ const Foundation = () => {
             </div>
             <div className="flex flex-col gap-3">
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab2} alt="" className="w-[340px]" />
+                <img src={dab3} alt="" className="w-[200px]" />
               </div>
 
               <div className="">
@@ -57,7 +58,7 @@ const Foundation = () => {
             </div>
             <div className="flex flex-col gap-3">
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab1} alt="" className="w-[200px]" />
+                <img src={dab2} alt="" className="w-[340px]" />
               </div>
 
               <div className="">
@@ -72,8 +73,8 @@ const Foundation = () => {
               </div>
             </div>
             <div className="md:flex hidden flex-col gap-3">
-              <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
-                <img src={dab2} alt="" className="w-[340px]" />
+              <div className="h-72 flex items-center justify-center bg-white rounded-t-full">
+                <img src={dab1} alt="" className="w-[200px]" />
               </div>
 
               <div className="">

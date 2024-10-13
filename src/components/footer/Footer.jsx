@@ -51,7 +51,7 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="flex justify-center gap-6 mt-10">
+        <div className="flex justify-center gap-12 mt-10">
           <PiTelegramLogoLight className="stroke-2 text-2xl" />
           <FaXTwitter className="text-2xl" />
           <BsGlobe className="text-2xl" />
