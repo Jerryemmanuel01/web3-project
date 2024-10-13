@@ -1,9 +1,9 @@
 import React from "react";
-import bg from "../../assets/rocket-coin.png";
+import ticker from "../../assets/ticker.jfif";
 
 const About = () => {
   return (
-    <div className="w-full my-5">
+    <div className="w-full relative">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#dedcff"
@@ -16,8 +16,8 @@ const About = () => {
           WHAT IS THIS ABOUT?
         </h3>
 
-        <div className="flex w-full bg-primary/5 items-center border-2 border-r-4 border-b-4 rounded-3xl pt-2 pb-8 mt-4 px-4 text-sm md:text-base">
-          <div className="text-justify hover:scale-[1.02] duration-300">
+        <div className="md:flex w-full gap-4 bg-primary/5 items-center border-2 border-r-4 border-b-4 rounded-3xl pt-2 pb-8 mt-4 px-4 text-sm md:text-base hover:scale-[1.02] duration-300">
+          <div className="text-justify w-full font-medium md:text-base text-sm ">
             <p className="mt-3">
               Dab Daddy is a meme token inspired by a popular cartoon piglet
               character from Hong Kong, created by cartoonist Alice Mak and
@@ -39,9 +39,12 @@ const About = () => {
               related to the existing Dab Daddy animated series.
             </p>
           </div>
-          <div className=" md:flex absolute w-full mt-10 animate_ping">
-            <img src="/src/assets/rocket-coin.png" alt="" className="" />
+          <div className=" md:flex w-full mt-10">
+            <img src={ticker} alt="" className="w-full rounded-2xl" />
           </div>
+        </div>
+        <div className=" top-0 left-0 absolute w-full animate_ping">
+          <img src="/src/assets/rocket-coin.png" alt="" className="" />
         </div>
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
