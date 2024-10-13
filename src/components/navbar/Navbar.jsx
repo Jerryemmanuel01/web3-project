@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex gap-3 items-center">
           <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-white flex justify-center items-center">
             <img
-              src="/src/assets/dab-token.png"
+              src={dabLogo}
               alt="image"
               className="w-[24px] lg:w-[28px] hover:-rotate-45 duration-200"
             />

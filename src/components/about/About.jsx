@@ -1,5 +1,6 @@
 import React from "react";
 import ticker from "../../assets/ticker.jfif";
+import rocket from "../../assets/rocket-coin.png";
 
 const About = () => {
   return (
@@ -44,7 +45,7 @@ const About = () => {
           </div>
         </div>
         <div className=" top-0 left-0 absolute w-full animate_ping">
-          <img src="/src/assets/rocket-coin.png" alt="" className="" />
+          <img src={rocket} alt="" className="" />
         </div>
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
