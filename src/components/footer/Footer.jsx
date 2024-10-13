@@ -1,8 +1,14 @@
 import React from "react";
+import { Link } from "react-scroll";
+import { FaTelegramPlane } from "react-icons/fa";
+import { PiTelegramLogoLight } from "react-icons/pi";
+import { FaXTwitter } from "react-icons/fa6";
+import { BsGlobe } from "react-icons/bs";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="h-screen bg-darkBg text-[white]">
+    <div className=" bg-darkBg text-[white]">
       <div className="-mt-3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -13,9 +19,33 @@ const Footer = () => {
         </svg>
       </div>
       <section className="">
-        <h2 className="font-dela text-3xl text-center">DAB DADDY</h2>
-        <div className="">
-            
+        <h2 className="font-dela text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center">
+          DAB DADDY
+        </h2>
+        <div className="flex justify-center w-full items-center mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 font-semibold text-xl">
+            <div className="">About</div>
+            <div className="">Feature</div>
+            <div className="">Tokenomics</div>
+            <div className="">Roadmap</div>
+            <div className="">How to buy</div>
+          </div>
+        </div>
+
+        <div className="mt-20 w-full flex justify-center ">
+          <button className="bg-custom-gradient px-10 md:px-16 py-4 md:py-5 text-xl rounded-3xl font-medium animate-bounce">
+            Buy now
+          </button>
+        </div>
+
+        <div className="flex justify-center gap-6 mt-10">
+          <PiTelegramLogoLight className="stroke-2 text-2xl" />
+          <FaXTwitter className="text-2xl" />
+          <BsGlobe className="text-2xl" />
+        </div>
+
+        <div className="flex justify-center items-center gap-1 mt-14 pb-6 text-sm">
+          &copy; <span className="font-dela text-[10px]"> DAB DADDY, 2024</span>
         </div>
       </section>
     </div>

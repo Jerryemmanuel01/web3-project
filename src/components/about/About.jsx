@@ -44,7 +44,7 @@ const About = () => {
             <img src={ticker} alt="" className="w-full rounded-2xl" />
           </div>
         </div>
-        <div className=" top-0 left-0 absolute w-full animate_ping">
+        <div className=" top-0 left-0 absolute w-full animate_ping z-0">
           <img src={rocket} alt="" className="" />
         </div>
       </section>

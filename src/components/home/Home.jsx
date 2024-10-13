@@ -17,7 +17,7 @@ const Home = () => {
       </div>
 
       <div className="mt-10 flex flex-col items-center gap-4">
-        <button className="text-secondary font-bold rounded-3xl outline-dashed border-2 border-b-[3px] bg-custom-gradient py-2 px-4 md:py-3 md:px-7 md:text-lg duration-200 hover:scale-[1.1]">
+        <button className="text-secondary font-bold rounded-3xl outline-dashed border-2 border-b-[3px] bg-custom-gradient py-2.5 px-5 md:py-3 md:px-7 md:text-lg duration-200 hover:scale-[1.1] z-10 animate-bounce">
           Buy Now
         </button>
         <button className="flex items-center gap-2 text-sm font-semibold font-inter">
