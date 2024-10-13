@@ -17,3 +17,17 @@
 .animate_ping {
     animation: ping 4s cubic-bezier(1, 1, 0.2, 1) infinite;transform: translateX(-300PX);
 }
+
+.slick-slide {
+  margin: 0px 10px;
+  overflow: hidden !important;
+}
+.slick-list {
+  overflow: hidden !important;
+  margin: 0px -10px;
+}
+.slide-ele  {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
