@@ -3,7 +3,7 @@ import dab1 from "../../assets/dab-token.png";
 
 const Foundation = () => {
   return (
-    <div className="bg-custom-gradient h-[120vhd]">
+    <div className="bg-varient text-secondary">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
