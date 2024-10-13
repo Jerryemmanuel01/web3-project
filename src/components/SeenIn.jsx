@@ -25,7 +25,6 @@ const SeenIn = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
           speed: 3000,
         },
       },
@@ -36,7 +35,7 @@ const SeenIn = () => {
       <h2 className="font-dela text-xl md:text-2xl">SEEN IN</h2>
 
       <div className="slider-container mt-3">
-        <Slider {...settings} className="h-24 overflow-hidden">
+        <Slider {...settings} className="h-20 overflow-hidden">
           <div className="slide-ele border-2 border-b-4 border-r-4 w-60 h-20 rounded-2xl ">
             <img src={tradingview} alt="" className="w-[85%]" />
           </div>
@@ -54,7 +53,6 @@ const SeenIn = () => {
           </div>
         </Slider>
       </div>
-      <h2>Here we go</h2>
     </div>
   );
 };

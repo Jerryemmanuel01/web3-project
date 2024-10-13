@@ -13,11 +13,11 @@ const About = () => {
         ></path>
       </svg>
       <section className="w-full bg-secondary -mt-2 pb-12 px-10 md:px-8 lg:px-14 xl:px-24 ">
-        <h3 className="font-dela text-xl md:text-2xl text-center pt-3">
+        <h3 className="font-dela text-xl md:text-2xl lg:text-3xl text-center pt-3">
           WHAT IS THIS ABOUT?
         </h3>
 
-        <div className="md:flex w-full gap-4 bg-primary/5 items-center border-2 border-r-4 border-b-4 rounded-3xl pt-2 pb-8 mt-4 px-4 text-sm md:text-base hover:scale-[1.02] duration-300">
+        <div className="md:flex w-full gap-4 bg-primary/5 items-center border-2 border-r-4 border-b-4 rounded-3xl pt-2 pb-8 mt-4 px-4 md:mt-10 text-sm md:text-base hover:scale-[1.02] duration-300">
           <div className="text-justify w-full font-medium md:text-base text-sm ">
             <p className="mt-3">
               Dab Daddy is a meme token inspired by a popular cartoon piglet
