@@ -7,6 +7,7 @@ export default {
       secondary: "#dedcff",
       accent: "#433bff",
       varient: "#988AB5",
+      dark: "#352C48",
     },
     extend: {
       backgroundImage: {

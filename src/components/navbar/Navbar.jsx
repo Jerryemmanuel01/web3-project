@@ -8,6 +8,13 @@ import dabLogo from "../../assets/dab-token.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+
+  const links = [
+    { name: "HOME", link: "/" },
+    { name: "ABOUT", link: "about" },
+    { name: "FOUNDATION", link: "foundation" },
+    { name: "HOW TO BUY", link: "how-to-buy" },
+  ];
   return (
     <section
       className={` w-full top-0 left-0 flex flex-col z-50 bg-secondary px-4 py-3 pb-10 mt-3 border-2 border-b-4 rounded-3xl fixed transition-all duration-700 ease-in-out overflow-hidden ${
@@ -48,12 +55,23 @@ const Navbar = () => {
           menu ? " opacity-100" : " opacity-0"
         } overflow-hidden`}
       >
-        <div className=" flex flex-col items-center gap-6 md:gap-14  font-dela md:text-xl">
-          <p className="text-accent font-semibold on_hover">ABOUT</p>
-          <p className="text-accent font-semibold on_hover">FEATURES</p>
-          <p className="text-accent font-semibold on_hover">ROADMAP</p>
-          <p className="text-accent font-semibold on_hover">HOW TO BUY</p>
-        </div>
+        <ul className=" flex flex-col items-center gap-6 md:gap-14  font-dela md:text-xl">
+          {links.map((link, i) => (
+            <li key={i} className="text-accent font-semibold on_hover">
+              <Link
+                to={link.link}
+                smooth={true}
+                activeClass="active"
+                spy={true}
+                duration={1000}
+                className="hover:text-dark cursor-pointer"
+                onClick={() => setMenu(false)}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
         <div className="flex md:hidden items-center justify-center gap-12 mt-10">
           <FaTelegramPlane className="text-xl lg:text-2xl on_hover" />
           <FaXTwitter className="text-xl lg:text-2xl on_hover" />

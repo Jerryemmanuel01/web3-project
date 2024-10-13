@@ -4,7 +4,7 @@ import rocket from "../../assets/rocket-coin.png";
 
 const About = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative" id="about">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#dedcff"

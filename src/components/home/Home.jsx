@@ -4,7 +4,7 @@ import yooDabo from "../../assets/yooo-dab.png";
 
 const Home = () => {
   return (
-    <div className="w-full h-[80vh] lg:h-[70vh] flex flex-col justify-center relative">
+    <div className="w-full h-[80vh] lg:h-[70vh] flex flex-col justify-center relative" id="/">
       <div className="text-center w-full flex flex-col justify-center items-center md:mt-16 lg:mt-40">
         <h3 className="text-accent text-lg font-semibold">INTRODUCING</h3>
         <h1 className="text-primary font-dela text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">

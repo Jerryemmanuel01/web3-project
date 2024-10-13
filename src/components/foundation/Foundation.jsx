@@ -4,7 +4,7 @@ import dab2 from "../../assets/dab-blue.png";
 
 const Foundation = () => {
   return (
-    <div className="bg-varient text-secondary mb-2">
+    <div className="bg-varient text-secondary mb-2" id="foundation">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"

@@ -1,14 +1,18 @@
-import React from "react";
 import { Link } from "react-scroll";
-import { FaTelegramPlane } from "react-icons/fa";
 import { PiTelegramLogoLight } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsGlobe } from "react-icons/bs";
-import { IoClose, IoMenu } from "react-icons/io5";
 
 const Footer = () => {
+  const links = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "about" },
+    { name: "Foundation", link: "foundation" },
+    { name: "How to buy", link: "how-to-buy" },
+  ];
+
   return (
-    <div className=" bg-darkBg text-[white]">
+    <div className=" bg-darkBg text-[white]" id="how-to-buy">
       <div className="-mt-3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -23,13 +27,22 @@ const Footer = () => {
           DAB DADDY
         </h2>
         <div className="flex justify-center w-full items-center mt-12">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 font-semibold text-xl">
-            <div className="">About</div>
-            <div className="">Feature</div>
-            <div className="">Tokenomics</div>
-            <div className="">Roadmap</div>
-            <div className="">How to buy</div>
-          </div>
+          <ul className="grid grid-cols-2 md:grid-cols-5 gap-10 font-semibold text-xl">
+            {links.map((link, i) => (
+              <li key={i}>
+                <Link
+                  to={link.link}
+                  smooth={true}
+                  activeClass="active"
+                  spy={true}
+                  duration={1000}
+                  className="hover:text-secondary cursor-pointer"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="mt-20 w-full flex justify-center ">
