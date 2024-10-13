@@ -43,14 +43,14 @@ const Footer = () => {
         >
           <ul className="grid grid-cols-2 md:grid-cols-4 gap-10 font-semibold text-xl">
             {links.map((link, i) => (
-              <li key={i}>
+              <li key={i} className="text-center">
                 <Link
                   to={link.link}
                   smooth={true}
                   activeClass="active"
                   spy={true}
                   duration={1000}
-                  className="hover:text-secondary cursor-pointer"
+                  className="hover:text-secondary cursor-pointer "
                 >
                   {link.name}
                 </Link>
