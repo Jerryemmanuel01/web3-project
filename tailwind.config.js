@@ -14,6 +14,7 @@ export default {
       },
       backgroundColor: {
         white: "#ffffff",
+        darkBg: "#352C48",
       },
     },
     fontFamily: {

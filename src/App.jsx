@@ -1,4 +1,5 @@
 import About from "./components/about/About.jsx"
+import Footer from "./components/footer/Footer.jsx";
 import Foundation from "./components/foundation/Foundation.jsx";
 import Home from "./components/home/Home.jsx"
 import Navbar from "./components/navbar/Navbar.jsx"
@@ -13,6 +14,7 @@ function App() {
       <About />
       <SeenIn />
       <Foundation />
+      <Footer />
     </section>
   );
 }

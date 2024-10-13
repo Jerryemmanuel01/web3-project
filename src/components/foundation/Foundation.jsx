@@ -4,7 +4,7 @@ import dab2 from "../../assets/dab-blue.png";
 
 const Foundation = () => {
   return (
-    <div className="bg-varient text-secondary">
+    <div className="bg-varient text-secondary mb-2">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -16,7 +16,7 @@ const Foundation = () => {
       <section className=" px-5 md:px-8 lg:px-14 xl:px-24 ">
         <div className="w-full flex flex-col items-center text-seceondary ">
           <h4 className="font-semibold text-lg">We got really a</h4>
-          <h2 className="font-dela text-xl md:text-2xl lg:text-3xl">
+          <h2 className="font-dela text-xl md:text-2xl lg:text-3xl text-[#000000]">
             STRONG FOUNDATION
           </h2>
         </div>
@@ -71,7 +71,7 @@ const Foundation = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="md:flex hidden flex-col gap-3">
               <div className="w-[] h-72 flex items-center justify-center bg-white rounded-t-full">
                 <img src={dab2} alt="" className="w-[340px]" />
               </div>
