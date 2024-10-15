@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants";
 const Home = () => {
   return (
     <div
-      className="w-full h-[80vh] lg:h-[70vh] flex flex-col justify-center relative"
+      className="w-full h-[85vh] lg:h-[70vh] flex flex-col justify-center relative"
       id="/"
     >
       <motion.div
